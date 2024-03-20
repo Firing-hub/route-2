@@ -62,12 +62,12 @@ const Header = () => {
   return (
     <div className={`header ${showMobileMenu ? "showMobileMenu" : ""} ${show}`}>
       <div className="logo" onClick={() => navigate("/")}>
-        <span>SaloonSync</span>
+        <span>ShortestPathFinder</span>
       </div>
       <div className="searchInput">
         <input
           type="text"
-          placeholder="Search for nearest saloon"
+          placeholder="Search for nearest distance"
           onChange={(e) => setQuery(e.target.value)}
           value={query}
         />
@@ -79,6 +79,9 @@ const Header = () => {
         </li>
         <li className="menuItem" onClick={() => navigate("/contact")}>
           Contact Us
+        </li>
+        <li className="menuItem" onClick={() => navigate("/legal")}>
+          Legal
         </li>
         {user ? (
           <li
@@ -123,7 +126,7 @@ const Header = () => {
           <div className="searchInput">
             <input
               type="text"
-              placeholder="Search for nearest saloon"
+              placeholder="Search for nearest distance"
               onChange={(e) => setQuery(e.target.value)}
               autoFocus
             />

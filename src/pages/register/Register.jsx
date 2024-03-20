@@ -9,7 +9,7 @@ import {
 } from "firebase/auth";
 import { update } from "firebase/database";
 import "./style.scss";
-import BackgroundImage3 from "../../assets/backgroundImage3.jpg";
+import BackgroundImage3 from "../../assets/Screenshot 2024-03-20 171703.png";
 import { FaGoogle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -117,7 +117,7 @@ const Register = () => {
       <div className="wrapper">
         <img src={BackgroundImage3} />
       </div>
-      <div className="name">SaloonSync</div>
+      <div className="name">ShortestPathFinder</div>
       <div className="mode">{login ? "Login" : "Signup"}</div>
       <div className="content">
         <form onSubmit={login ? (e) => handleLogin(e) : (e) => handleSignup(e)}>

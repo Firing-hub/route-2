@@ -3,12 +3,12 @@ import { GoogleAuthProvider, getAuth } from "firebase/auth";
 import { getDatabase, ref } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_APP_FIREBASE_KEY,
-  authDomain: "saloonsync-bde52.firebaseapp.com",
-  projectId: "saloonsync-bde52",
-  storageBucket: "saloonsync-bde52.appspot.com",
-  messagingSenderId: "1043965591508",
-  appId: "1:1043965591508:web:f9c05e5a1a555efe50e041",
+  apiKey: "AIzaSyDBSIuIW7DmEkF-M8tDWQURhZwuO_30QZI",
+  authDomain: "dtiproject-731f2.firebaseapp.com",
+  projectId: "dtiproject-731f2",
+  storageBucket: "dtiproject-731f2.appspot.com",
+  messagingSenderId: "61677806866",
+  appId: "1:61677806866:web:9448b2711bbfcdf8737fcb"
 };
 
 export const app = initializeApp(firebaseConfig);
